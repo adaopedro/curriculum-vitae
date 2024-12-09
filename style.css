@@ -100,11 +100,15 @@ section {
     margin-top: 25px;
 }
 
+section#introduction {
+    border-top: 1px solid #ccc;
+    padding-top: 8px;
+}
+
 section h2 {
     padding-bottom: 8px;
     margin-bottom: 8px;
     border-bottom: 1px solid #ccc;
-
 }
 
 section > div .where {
@@ -148,4 +152,31 @@ footer {
     border-top: 1px solid #ccc;
     display: flex;
     gap: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 20px 0;
+    }
+
+    .link#download {
+        width: 200px;
+        text-align: center;
+        right: 50% + 100px;
+    }
+    
+    .sheet {
+        width: 350px;
+        padding: 30px;
+        padding-top: 50px;
+    }
+
+    header .details {
+        flex-direction: column;
+    }
+
+    header .details,
+    section#introduction {
+        margin-top: 10px
+    };
 }
