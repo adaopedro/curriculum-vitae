@@ -7,15 +7,6 @@
     list-style-type: none;
 }
 
-body {
-    font-family: Roboto, "sans-serif";
-    background-color: #f1f1f1;
-    padding: 50px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
-
 .sheet {
     background-color: #fff;
     width: 21cm;
@@ -56,6 +47,15 @@ h2 {
     font-weight: 700;
     color: #696969;
     text-align: center;
+}
+
+body {
+    font-family: Roboto, "sans-serif";
+    background-color: #f1f1f1;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 header {
@@ -115,9 +115,6 @@ section > div .where {
     display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
-}
-
-section > div .where  {
     font-size: 14px;
 }
 
@@ -155,10 +152,7 @@ footer {
 }
 
 @media screen and (max-width: 480px) {
-    body {
-        padding: 20px 0;
-    }
-
+    
     .link#download {
         width: 200px;
         text-align: center;
@@ -171,12 +165,43 @@ footer {
         padding-top: 50px;
     }
 
+    body {
+        padding: 20px 0;
+    }
+    
     header .details {
         flex-direction: column;
     }
 
     header .details,
     section#introduction {
-        margin-top: 10px
-    };
+        margin-top: 10px;
+    }
+
+    section > div .where  {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    section > div .what {
+        text-align: center;
+    }
+
+    section ul {
+        padding-left: 0;
+    }
+
+    section ul li {
+        list-style-type: none;
+    }
+    
+    section ul li h4 {
+        /* text-align: center; */
+    }
+
+    footer {
+        justify-content: center;
+    }
+    
 }
