@@ -168,9 +168,18 @@ footer {
     body {
         padding: 20px 0;
     }
+
+    header > h2 {
+        margin-bottom: 0;
+    }
     
     header .details {
         flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    header .details > div {
+        justify-content: flex-start;
     }
 
     header .details,
@@ -195,13 +204,11 @@ footer {
     section ul li {
         list-style-type: none;
     }
-    
-    section ul li h4 {
-        /* text-align: center; */
-    }
 
     footer {
         justify-content: center;
     }
+    
+    
     
 }
